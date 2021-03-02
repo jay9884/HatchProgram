@@ -1,0 +1,520 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+}
+
+/* Reset CSS */
+a {
+    color: inherit;
+    text-decoration: none !important;
+}
+
+button,
+input,
+textarea {
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+}
+
+button:focus,
+button:active,
+input:focus,
+input:active,
+textarea:focus,
+textarea:active {
+    outline: none;
+    box-shadow: none;
+}
+
+ul,
+ol,
+li {
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: -0.01em;
+    color: #2B292D;
+}
+
+.fill-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height: 48px;
+    border-radius: 2px;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.6;
+    letter-spacing: -0.05em;
+    color: #ffffff;
+    background-color: #3040C4;
+    transition: opacity 300ms ease-in-out;
+}
+
+.fill-button:hover {
+    opacity: 0.8;
+}
+
+.fill-button.inverted {
+    color: #3040C4;
+    background-color: #FFFFFF;
+}
+
+.Section {
+    padding : 80px 0;
+}
+
+.Section-category {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: -0.01em;
+}
+
+.Section-title {
+    margin-bottom: 24px;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 1.058823;
+    letter-spacing: -0.04em;
+    color: #2B292D;
+}
+
+/* Landing */
+.Landing {
+    background-color: #FDDED8;
+    text-align: center;
+}
+
+.Landing-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.Landing-title {
+    margin-bottom: 24px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -0.05em;
+    color: #2B292D;
+}
+
+.Landing-desc {
+    margin-bottom: 20px;
+}
+
+.Landing .button-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Landing .button-box .fill-button:first-child {
+    margin-right: 8px;
+}
+
+/* Service */
+.Service {
+    background-color: #F4F5F7;
+    padding: 80px 0;
+}
+
+.Service-title {
+    margin-bottom: 16px;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.363636;
+    letter-spacing: -0.04em;
+    color: #2B292D;
+}
+
+.Service-desc {
+    color: #2B292D;
+}
+
+.Service .col-12:first-child {
+    margin-bottom: 40px;
+}
+
+/* Program */
+.Program .row:first-child {
+    margin-bottom: 32px;
+}
+
+.Program .Section-category {
+    color: #009B4D;
+}
+
+.Program .col-md-4 {
+    margin-bottom: 20px;
+}
+
+.Program .col-md-4:last-child {
+    margin-bottom: 0;
+}
+
+.Prog-img-box {
+    display: block;
+    /* flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    padding: 24px 0 32px 0;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #ffffff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+    transition: color 300ms ease-in-out, background-color 300ms ease-in-out, box-shadow 300ms ease-in-out;
+}
+
+.Prog-img-box:hover {
+    color: #ffffff;
+    background-color: #3141C5;
+    box-shadow: 0px 13px 18px rgba(0, 0, 0, 0.15), 0px 11px 55px rgba(0, 0, 0, 0.07);
+}
+
+.Prog-img-box img {
+    display: block;
+    width: auto;
+    height: 195px;
+    margin: 0 auto;
+    margin-bottom: 16px;
+    margin-bottom: 16px;
+}
+
+.Prog-img-box strong {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.333333;
+    letter-spacing: -0.02em;
+}
+
+/* Curriculum */
+.Curriculum .row:first-child {
+    margin-bottom: 48px;
+}
+
+.Curriculum .Section-category {
+    color: #0189D1;
+}
+
+.Curriculum .Section-desc {
+    margin-bottom: 32px;
+}
+
+.Curri-img {
+    display: none;
+}
+
+.Curriculum .row:last-child .col-12:first-child {
+    margin-bottom: 40px;
+}
+
+.Curri-detail {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.466666;
+    letter-spacing: -0.01em;
+    color: #2B292D;
+}
+
+/* Subscription */
+.Subscription {
+    padding: 40px 0;
+    text-align: center;
+    background-color: #F2F8FA;
+}
+
+.Subs-img {
+    display: block;
+}
+
+.Subs-img img {
+    display: block;
+    width: auto;
+    height: 190px;
+    padding: 25px 0;
+    margin: 0 auto;
+}
+
+.Subscription-title {
+    margin-bottom: 16px;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -0.05em;
+    color: #7B7B7E;
+}
+
+.Subscription-desc {
+    margin-bottom: 24px;
+}
+
+.Subscription .input-box {
+    margin-bottom: 8px;
+}
+
+.Subscription .input-box input {
+    width: 100%;
+    padding: 12px 16px;
+    margin-bottom: 8px;
+    border: none;
+    border-radius: 2px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: -0.01em;
+    color: #7B7B7E;
+    background-color: #ffffff;
+}
+
+.Subscription .input-box .fill-button {
+    width: 100%;
+    height: 48px;
+    border: none;
+}
+
+.Subs-notice {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.538461;
+    color: #7B7B7E;
+}
+
+.Subs-notice a {
+    color: #3040C4;
+    text-decoration: underline !important;
+}
+
+/* Footer */
+.Footer {
+    margin : 24px 0;
+}
+
+.Footer-link {
+    margin-bottom: 8px;
+}
+
+.Footer-link:last-child {
+    margin-bottom: 0;
+}
+
+.Footer-link a {
+    font-size: 14px;
+    line-height: 1.714285;
+    color: #807F81;
+}
+
+/* min-width : 768px */
+@media screen and (min-width : 768px) {
+    p {
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 1.363636;
+        letter-spacing: -0.01em;
+    }
+
+    .Landing-content {
+        /* height가 viewport 였던 것을 없앰 */
+        height: auto;
+        padding : 120px 0;
+    }
+
+    /* Landing */
+    .Landing-title {
+        margin-bottom: 32px;
+        font-size: 70px;
+        line-height: 1.028571;
+    }
+
+    .Landing-desc {
+        margin-bottom: 32px;
+    }
+
+    .fill-button {
+        width: 160px;
+        height: 56px;
+        font-size: 18px;
+        line-height: 1.555555;
+    }
+
+    .Section {
+        padding-bottom : 96px;
+    }
+
+    .Section-category {
+        margin-bottom: 16px;
+        font-size: 22px;
+        line-height: 1.090909;
+    }
+
+    .Section-title {
+        margin-bottom: 32px;
+        font-size: 56px;
+        line-height: 1;
+    }
+
+    .Landing .button-box .fill-button:first-child {
+        margin-right: 16px;
+    }
+
+    .Service-title {
+        margin-bottom: 16px;
+        font-size: 26px;
+        line-height: 1.307692;
+    }
+
+    .Service-desc {
+        font-size: 22px;
+        line-height: 1.454545;
+    }
+
+    .Service .col-12:first-child {
+        margin-bottom: 0;
+    }
+
+    /* Program */
+    .Program {
+        text-align: center;
+    }
+
+    .Program .row:first-child {
+        margin-bottom: 72px;
+    }
+
+    .Prog-img-box img {
+        margin-bottom: 24px;
+    }
+
+    .Prog-img-box strong {
+        font-size: 20px;
+        line-height: 1.2;
+    }
+
+    /* Curriculum */
+    .Curriculum .row:first-child {
+        margin-bottom: 24px;
+    }
+
+    .Curriculum .row:last-child .col-12:first-child {
+        margin-bottom: 0;
+    }
+
+    .Curriculum .Section-desc {
+        margin-bottom: 72px;
+    }
+
+    .Curri-img {
+        display: block;
+    }
+
+    .Curri-img img{
+        display: block;
+        width: 100%;
+        max-width: 425px;
+        height: auto;
+    }
+
+    .Curri-detail {
+        font-size: 18px;
+        line-height: 1.444444;
+    }
+
+    /* Subscription */
+    .Subscription {
+        padding: 80px 0;
+        text-align: left;
+    }
+
+    .Subs-img {
+        padding: 8px 83px 8px 0;
+    }
+
+    .Subs-img img {
+        height: 285px;
+        margin-left: 0;
+    }
+
+    .Subscription-title {
+        margin-bottom: 16px;
+        font-size: 40px;
+        line-height: 1;
+    }
+
+    .Subscription .input-box {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 4px;
+    }
+    
+    .Subscription .input-box input {
+        width: 100%;
+        height: 56px;
+        padding: 16px 16px;
+        margin-right: 8px;
+        margin-bottom: 0;
+        font-size: 18px;
+        line-height: 1.333333;
+    }
+    
+    .Subscription .input-box .fill-button {
+        flex-shrink: 0;
+        width: 160px;
+        height: 56px;
+        border: none;
+    }
+
+    .Subscription .Subs-notice {
+        font-size: 14px;
+        line-height: 1.714285;
+    }
+
+    /* Footer */
+    .Footer {
+        margin : 16px 0;
+    }
+
+    .Footer-links {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .Footer-link {
+        margin-right: 16px;
+        margin-bottom: 0;
+    }
+
+    .Footer-link:last-child {
+        margin-right: 0;
+    }
+
+    
+
+
+}
+
+/* Custom grid system */
+@media screen and (min-width : 1200px) {
+    .container {
+        max-width: 960px;
+    }
+}
+

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./cardgame.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+    <title>Open Tile Game</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-nav">
+                <div class="logo">
+                    <h2>Game Land</h2>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="title">
+                    <h1>Open Tile Game</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-nav">
+
+            </div>
+            <div class="col-1">
+                <div class="titlePOne">Player1</div>
+            </div>
+            <div class="col-1">
+                <div class="titleCenter">field</div>
+            </div>
+            <div class="col-1">
+                <div class="titlePTwo">Player2</div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-nav">
+                <ul class="nav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Acade</a></li>
+                    <li><a href="#">Puzzle Game</a></li>
+                    <li><a href="#">Card Game</a></li>
+                    <li><a href="#">Card Game</a></li>
+                </ul>
+            </div>
+
+            <div class="col-1">
+                <div class="playerOne">
+                    <button class="numberOne"><strong>1</strong></button>
+                    <button class="numberOne"><strong>2</strong></button>
+                    <button class="numberOne"><strong>3</strong></button>
+                    <button class="numberOne"><strong>4</strong></button>
+                    <button class="numberOne"><strong>5</strong></button>
+                    <button class="numberOne"><strong>6</strong></button>
+                    <button class="numberOne"><strong>7</strong></button>
+                    <button class="numberOne"><strong>8</strong></button>
+                    <button class="numberOne"><strong>9</strong></button>
+                    <button class="numberOne"><strong>10</strong></button>
+                </div>
+            </div>
+
+            <div class="col-1">
+                <div class="center">
+                    <div class="gameBody"></div>
+                    <div class="cardField">
+                        <div class="hide cardFromPOne">1</div>
+                        <div class="hide cardFromPTwo">2</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-1">
+                <div class="playerTwo">
+                    <button class="numberTwo hide"><strong>1</strong></button>
+                    <button class="numberTwo hide"><strong>2</strong></button>
+                    <button class="numberTwo hide"><strong>3</strong></button>
+                    <button class="numberTwo hide"><strong>4</strong></button>
+                    <button class="numberTwo hide"><strong>5</strong></button>
+                    <button class="numberTwo hide"><strong>6</strong></button>
+                    <button class="numberTwo hide"><strong>7</strong></button>
+                    <button class="numberTwo hide"><strong>8</strong></button>
+                    <button class="numberTwo hide"><strong>9</strong></button>
+                    <button class="numberTwo hide"><strong>10</strong></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-nav"></div>
+            <div class="col-1">
+                <div class="scoreOne">
+                    점수 <strong>0</strong>
+                </div>
+            </div>
+            <div class="col-1">
+                <section class="select">
+                    <div>
+                      <strong>Player1</strong>님의 차례 입니다.
+                    </div>
+                    <div>
+                      <button class = "nextTurn">확정하고 턴 넘기기</button>
+                    </div>
+                </section>
+            </div>
+            <div class="col-1">
+                <div class="scoreTwo">
+                    점수 <strong>0</strong>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./cardgame.js"></script>
+</body>
+</html>
